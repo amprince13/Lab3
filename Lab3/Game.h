@@ -23,12 +23,13 @@ public:
 	static void stop_game();
 	shared_ptr<Player> add_player(const string);
 	shared_ptr<Player> find_player(const string);
-	virtual int before_turn(Player &);
-	virtual int turn(Player &);
-	virtual int after_turn(Player &);
-	virtual int before_round();
-	virtual int round();
-	virtual int after_round();
+	// = 0 declaration makes these pure virtual
+	virtual int before_turn(Player &p) = 0;
+	virtual int turn(Player &p) = 0;
+	virtual int after_turn(Player &p) = 0;
+	virtual int before_round() = 0;
+	virtual int round() = 0;
+	virtual int after_round() = 0;
 
 protected:
 	static std::shared_ptr<Game> games;

@@ -73,7 +73,7 @@ shared_ptr<Player> Game::find_player(const string pfind)
 Game::~Game() {
 	cout << "Game has been deleted " << endl;
 }
-int Game::before_turn(Player &) {
+/*int Game::before_turn(Player &) {
 	cout << "Game class before turn has been called " << endl;
 	return 0;
 }
@@ -96,4 +96,4 @@ int Game::round() {
 int Game::after_round() {
 	cout << "Game after round has been called " << endl;
 	return 0;
-}
+}*/

@@ -13,10 +13,12 @@
 #include "FiveCardDraw.h"
 using namespace std;
 
-int FiveCardDraw::before_turn(Player p) {
+int FiveCardDraw::before_turn(Player &p) {
+	cout << p.playerName << " " << p.playerHand << " Which cards would you like to discard " << endl;
 	return 0;
 }
 FiveCardDraw::FiveCardDraw() {
+	dealer = 0;
 	mainDeck = Deck();
 	discardDeck = Deck();
 	for (int i = 0; i < 4; i++) {
