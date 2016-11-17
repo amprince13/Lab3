@@ -19,7 +19,7 @@ public:
 	virtual int before_turn(Player);
 protected:
 	size_t dealer;
-	Deck drawdeck;
+	Deck discardDeck;
 
 
 };

@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Game.h"
 #include "FiveCardDraw.h"
 
@@ -74,19 +75,25 @@ Game::~Game() {
 }
 int Game::before_turn(Player &) {
 	cout << "Game class before turn has been called " << endl;
+	return 0;
 }
 int Game::turn(Player &) {
 	cout << "Game class turn has been called " << endl;
+	return 0;
 }
 int Game::after_turn(Player &) {
 	cout << "Game class after turn has been called " << endl;
+	return 0;
 }
 int Game::before_round() {
 	cout << "Game class before round has been called " << endl;
+	return 0;
 }
 int Game::round() {
 	cout << "Game class round has been called " << endl;
+	return 0;
 }
 int Game::after_round() {
-
+	cout << "Game after round has been called " << endl;
+	return 0;
 }
