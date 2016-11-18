@@ -60,7 +60,7 @@ shared_ptr<Player> Game::add_player(const string padd)
 
 shared_ptr<Player> Game::find_player(const string pfind)
 {
-	for (int i = 0; i < players.size(); i++) {
+	for (unsigned int i = 0; i < players.size(); i++) {
 		//might need string compare
 		if ((*players[i]).playerName == pfind) {
 			return players[i];
